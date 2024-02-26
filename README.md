@@ -1,3 +1,3 @@
-c++练习\n
-使用cmake和gtest\n
+###c++练习
+使用cmake和gtest
 https://github.com/courseworks
