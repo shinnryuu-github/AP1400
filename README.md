@@ -1,5 +1,5 @@
 ## Overview
-Good c++ practice homework using cmake and gtest
+c++ practice homework using cmake and gtest
 
 Amirkabir University of Technology 1400-2: Advanced Programming Course
 
