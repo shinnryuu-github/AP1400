@@ -13,7 +13,6 @@
 #include <assert.h>
 
 namespace crypto{
-
   RSA* createPrivateRSA(std::string key);
 
   RSA* createPublicRSA(std::string key);
