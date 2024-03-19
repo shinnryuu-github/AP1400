@@ -7,7 +7,6 @@
 #include "unique_ptr.h"
 #include "shared_ptr.h"
 
-/*
 TEST(HW4Test, TEST1) {
     UniquePtr<int> ptr1{new int{10}};
     EXPECT_EQ(*ptr1.get(), 10);
@@ -83,6 +82,17 @@ TEST(HW4Test, TEST9) {
     EXPECT_FALSE(ptr);
     delete tmp;
 }
+
+// TEST(HW4Test, TEST10){
+//     UniquePtr<int> ptr1{new int{10}};
+//     EXPECT_THROW(UniquePtr<int> ptr2{ptr1}, std::logic_error);
+// }
+
+// TEST(HW3Test, TEST11){
+//     UniquePtr<int> ptr1{new int{10}};
+//     UniquePtr<int> ptr2{new int{11}};
+//     EXPECT_THROW(ptr1 = ptr2, std::logic_error);
+// }
 
 TEST(HW4Test, TEST10) {
     SharedPtr<int> ptr1{new int{10}};
@@ -203,8 +213,3 @@ TEST(HW4Test, TEST21) {
     EXPECT_EQ(ptr1.use_count(), 2);
     EXPECT_EQ(ptr2.use_count(), 2);
 }
-*/
-
-
-
-

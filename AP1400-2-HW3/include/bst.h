@@ -12,9 +12,10 @@ public:
     class Node
     {
     public:
-        Node(int value, Node* left, Node* right);
         Node();
+        Node(int value, Node* left, Node* right);
         Node(const Node& node);
+        ~Node();
 
         int value;
         Node* left;

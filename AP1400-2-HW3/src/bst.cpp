@@ -11,6 +11,10 @@ BST::Node::Node()
 BST::Node::Node(const Node& node)
 : value(node.value), left(node.left), right(node.right) {}
 
+BST::Node::~Node(){
+    
+}
+
 std::ostream& operator<<(std::ostream &out, const BST::Node& node){
     out << std::left << std::setw(17) << &node << "=> value:" << std::left << std::setw(10) << node.value << "left:" << std::left << std::setw(16) << node.left << "right:" << std::left << std::setw(17) << node.right << std::endl;
     return out;
