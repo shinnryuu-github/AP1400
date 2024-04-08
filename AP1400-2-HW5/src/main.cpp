@@ -5,13 +5,13 @@
 #include "espresso_based.h"
 #include "cappuccino.h"
 #include "mocha.h"
-
+#include <ncurses.h>
 int main(int argc, char **argv)
 {
     if (false) // make false to run unit-tests
     {
         // debug section
-        
+
     }
     else
     {

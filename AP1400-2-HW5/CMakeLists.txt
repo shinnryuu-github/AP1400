@@ -4,8 +4,9 @@ project(AP)
 set(CMAKE_CXX_STANDARD 20)
 
 find_package(GTest REQUIRED)
+find_package(Curses REQUIRED)
 
-include_directories(include/)
+include_directories(include/ ${CURSES_INCLUDE_DIR})
 
 add_executable(main
         src/main.cpp
@@ -17,4 +18,5 @@ add_executable(main
 target_link_libraries(main
         GTest::GTest
         GTest::Main
+        ${CURSES_LIBRARIES}
 )
